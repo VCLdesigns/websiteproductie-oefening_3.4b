@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+#container div {
+  position: absolute;
+}
+
+/* lijnen*/
+
+.lijn {
+  background-color: black;
+}
+.lijn_h {
+  width: 800px;
+  height: 5px;
+  left: 0;
+}
+#container div:nth-of-type(1) {
+  top: 50px;
+}
+#container div:nth-of-type(2) {
+  top: 100px;
+}
+#container div:nth-of-type(3) {
+  top: 250px;
+}
+#container div:nth-of-type(4) {
+  top: 450px;
+}
+.lijn_v {
+  width: 10px;
+  height: 600px;
+  top: 0;
+}
+#container div:nth-of-type(5) {
+  left: 50px;
+}
+#container div:nth-of-type(6) {
+  left: 250px;
+}
+#container div:nth-of-type(7) {
+  left: 300px;
+}
+#container div:nth-of-type(8) {
+  left: 550px;
+}
+#container div:nth-of-type(9) {
+  left: 750px;
+}
+
+/*Positie*/
+
+.rij_1 {
+  top: 55px;
+}
+.rij_2 {
+  top: 105px;
+}
+.rij_3 {
+  top: 255px;
+}
+.kolom_1 {
+  left: 60px;
+}
+.kolom_2 {
+  left: 260px;
+}
+.kolom_3 {
+  left: 310px;
+}
+.kolom_4 {
+  left: 560px;
+}
+
+/*figuren*/
+
+#container div:nth-of-type(10) {
+  width: 190px;
+  height: 45px;
+  background: linear-gradient(to right, #00e9ff 0%, #0008ff 50%, #00ffe1 100%);
+}
+#container div:nth-of-type(11) {
+  width: 40px;
+  height: 145px;
+  background: linear-gradient(to bottom, #ff0000 0%, #ff00fa 50%, #ff0004 100%);
+}
+#container div:nth-of-type(12) {
+  width: 240px;
+  height: 195px;
+  background: linear-gradient(135deg, #e9ff00 0%, #ff5d00 50%, #ff0004 100%);
+}
+#container div:nth-of-type(13) {
+  width: 190px;
+  height: 145px;
+  background: linear-gradient(135deg, #ff0004 0%, #ff5d00 50%, #e9ff00 100%);
+}
+
+#container div:nth-of-type(14) {
+  width: 190px;
+  height: 195px;
+  background: radial-gradient(
+    ellipse at center,
+    #3fff00 0%,
+    #057700 50%,
+    #0e2300 100%
+  );
+  border-radius: 50%;
+}
+#container div:nth-of-type(15) {
+  width: 0;
+  height: 0;
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+  border-bottom: 195px solid red;
+}
+#container div:nth-of-type(16) {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 145px solid magenta;
+}
