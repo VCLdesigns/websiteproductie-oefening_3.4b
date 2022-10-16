@@ -10,6 +10,21 @@
   position: relative;
   margin: 0 auto;
 }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+header, footer{
+  padding: 50px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 2px 2px #333;
+  
+
+}
 #container div {
   position: absolute;
 }
@@ -18,22 +33,24 @@
 
 .lijn {
   background-color: black;
+  box-shadow: #333 0px 0px 7px 1px;
+  z-index: -1;
 }
 .lijn_h {
   width: 800px;
   height: 5px;
   left: 0;
 }
-#container div:nth-of-type(1) {
+#container div:nth-of-type(6) {
   top: 50px;
 }
-#container div:nth-of-type(2) {
+#container div:nth-of-type(7) {
   top: 100px;
 }
-#container div:nth-of-type(3) {
+#container div:nth-of-type(8) {
   top: 250px;
 }
-#container div:nth-of-type(4) {
+#container div:nth-of-type(9) {
   top: 450px;
 }
 .lijn_v {
@@ -41,19 +58,19 @@
   height: 600px;
   top: 0;
 }
-#container div:nth-of-type(5) {
+#container div:nth-of-type(1) {
   left: 50px;
 }
-#container div:nth-of-type(6) {
+#container div:nth-of-type(2) {
   left: 250px;
 }
-#container div:nth-of-type(7) {
+#container div:nth-of-type(3) {
   left: 300px;
 }
-#container div:nth-of-type(8) {
+#container div:nth-of-type(4) {
   left: 550px;
 }
-#container div:nth-of-type(9) {
+#container div:nth-of-type(5) {
   left: 750px;
 }
 
@@ -87,21 +104,25 @@
   width: 190px;
   height: 45px;
   background: linear-gradient(to right, #00e9ff 0%, #0008ff 50%, #00ffe1 100%);
+  border: #00ffe1 5px outset;
 }
 #container div:nth-of-type(11) {
   width: 40px;
   height: 145px;
   background: linear-gradient(to bottom, #ff0000 0%, #ff00fa 50%, #ff0004 100%);
+  border: inset 5px #ff0000;
 }
 #container div:nth-of-type(12) {
   width: 240px;
   height: 195px;
   background: linear-gradient(135deg, #e9ff00 0%, #ff5d00 50%, #ff0004 100%);
+  border: #ff5d00 10px inset;
 }
 #container div:nth-of-type(13) {
   width: 190px;
   height: 145px;
   background: linear-gradient(135deg, #ff0004 0%, #ff5d00 50%, #e9ff00 100%);
+  border: #ff5d00 10px outset;
 }
 
 #container div:nth-of-type(14) {
@@ -114,6 +135,7 @@
     #0e2300 100%
   );
   border-radius: 50%;
+  border: #057700 double 80px;
 }
 #container div:nth-of-type(15) {
   width: 0;
@@ -121,6 +143,7 @@
   border-left: 95px solid transparent;
   border-right: 95px solid transparent;
   border-bottom: 195px solid red;
+  border-radius: 50px;
 }
 #container div:nth-of-type(16) {
   width: 0;
@@ -128,4 +151,9 @@
   border-left: 120px solid transparent;
   border-right: 120px solid transparent;
   border-top: 145px solid magenta;
+  border-radius: 100px;
+}
+footer {
+  font-size: 0.5em;
+  font-weight: lighter;
 }
